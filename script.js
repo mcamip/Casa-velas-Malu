@@ -15,10 +15,12 @@ const WHATSAPP_SALUDO = "¡Hola! Quisiera más información sobre sus velas 🕯
     Para agregar una categoría nueva, copia una línea y cámbiala.
    ---------------------------------------------------------- */
 const categorias = [
-    { id: "decorativas", nombre: "Velas Decorativas", tipo: "velas",   emoji: "🕯️", color: "#ecd9c6" },
-    { id: "aromaticas",  nombre: "Velas Aromáticas",  tipo: "velas",   emoji: "🌸", color: "#ead0c7" },
+    { id: "decorativas", nombre: "Velas Navideñas", tipo: "velas",   emoji: "🕯️", color: "#ecd9c6" },
+    { id: "aromaticas",  nombre: "Velas Decorativas",  tipo: "velas",   emoji: "🌸", color: "#ead0c7" },
+    { id: "aromaticas",  nombre: "Recordatorios",  tipo: "velas",   emoji: "🌸", color: "#ead0c7" },    { id: "aromaticas",  nombre: "Velas Decorativas",  tipo: "velas",   emoji: "🌸", color: "#ead0c7" },
     { id: "ceras",       nombre: "Ceras",             tipo: "insumos", emoji: "🧈", color: "#dfe3d0" },
-    { id: "moldes",      nombre: "Moldes",            tipo: "insumos", emoji: "🫙", color: "#e3d6c8" }
+    { id: "moldes",      nombre: "Moldes",            tipo: "insumos", emoji: "🫙", color: "#e3d6c8" },
+    { id: "moldes",      nombre: "Empaques",            tipo: "insumos", emoji: "📦", color: "#e3d6c8" }
 ];
 
 /* ----------------------------------------------------------
