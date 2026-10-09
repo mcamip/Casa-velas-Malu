@@ -33,7 +33,6 @@
 
         <!-- Enlaces extra: solo se ven en celular dentro del menú hamburguesa -->
         <div class="nav__extra">
-        <a href="#">Mi cuenta</a>
         <a href="#faq">Preguntas frecuentes</a>
         <a href="#politicas">Políticas y términos</a>
         <a href="#redes">Redes sociales</a>
@@ -92,6 +91,21 @@
     <!-- ============================================================
     3b. PRODUCTOS (se generan desde script.js)
     ============================================================ -->
+    <!-- ============================================================
+    FILTROS (chips) Y ORDEN POR PRECIO
+    Los chips se generan solos desde las categorías de script.js
+    ============================================================ -->
+<section class="container toolbar">
+<div class="chips" id="chips"></div>
+<label class="sort">
+    Ordenar por
+    <select id="ordenPrecio">
+    <option value="">Relevancia</option>
+    <option value="asc">Precio: menor a mayor</option>
+    <option value="desc">Precio: mayor a menor</option>
+    </select>
+</label>
+</section>
     <section class="section container" id="velas">
     <h2 class="section__title">Velas · Más vendidas y novedades</h2>
     <div class="filter-bar" id="filtroActivo" hidden></div>
@@ -172,11 +186,6 @@
         <p>Velas artesanales e insumos.</p>
     </div>
     <div>
-        <h4>Mi cuenta</h4>
-        <a href="#">Iniciar sesión</a>
-        <a href="#">Mis pedidos</a>
-    </div>
-    <div>
         <h4>Ayuda</h4>
         <a href="#faq">Preguntas frecuentes</a>
         <a href="#politicas">Políticas y términos</a>
@@ -184,8 +193,7 @@
     <div id="redes">
         <h4>Redes sociales</h4>
         <!-- EDITAR: pon tus enlaces reales -->
-        <a href="https://instagram.com/tu_usuario" target="_blank" rel="noopener">Instagram</a>
-        <a href="https://facebook.com/tu_pagina" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.instagram.com/casa_velas_malu?psln=MWtzMG42eDBvcjJnOA==" target="_blank" rel="noopener">Instagram</a>
         <a href="https://tiktok.com/@tu_usuario" target="_blank" rel="noopener">TikTok</a>
     </div>
     </div>
@@ -217,6 +225,25 @@
     <a href="#" class="btn btn--primary btn--full" id="btnPedido" target="_blank" rel="noopener">Pedir por WhatsApp</a>
     </div>
 </aside>
+
+<!-- ============================================================
+        AVISO FLOTANTE ("Agregado al carrito")
+    ============================================================ -->
+<output class="toast" id="toast"></output>
+
+<!-- ============================================================
+    MODAL DE DETALLE DE PRODUCTO (se llena desde script.js)
+    ============================================================ -->
+<div class="modal" id="modal" hidden>
+<dialog class="modal_box" id="modalBox" aria-labelledby="modalNombre">
+    <button class="modal__close" id="cerrarModal" aria-label="Cerrar">✕</button>
+    <div class="modal__gallery">
+    <div class="modal__main" id="modalPrincipal"></div>
+    <div class="modal__thumbs" id="modalMiniaturas"></div>
+    </div>
+    <div class="modal__info" id="modalInfo"></div>
+</div>
+</div>
 
 <script src="script.js"></script>
 </body>
